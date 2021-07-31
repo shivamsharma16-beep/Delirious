@@ -27,9 +27,9 @@ from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 
 from telethon import events
 
-from cinderella.events import register
+from delirious.events import register
 
-from cinderella.utils import progress
+from delirious.utils import progress
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
@@ -499,7 +499,7 @@ async def download_video(v_url):
 
     elif video:
 
-        await rkp.edit(f"`Preparing to upload video song :`\
+        await rkp.edit(f"`Preparing to upload video  :`\
 
         \n**{rip_data['title']}**\
 
@@ -531,7 +531,7 @@ __help__ = """
 
  /song <songname artist(optional)>: uploads the song in it's best quality available
 
- /video <songname artist(optional)>: uploads the video song in it's best quality available
+ /video <songname artist(optional)>: uploads the video in it's best quality available
 
 """
 
